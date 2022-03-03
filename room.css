@@ -1,0 +1,134 @@
+body{
+
+    height: 100%;
+    animation-name: nameofanimation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    width: 100%;
+
+}
+
+@keyframes nameofanimation{
+
+    0%{background-color: rgba(214, 158, 255, 0.5);}
+    33%{background-color: rgba(132, 132, 255, 0.5);}
+    66%{background-color: rgba(121, 206, 255, 0.5);}
+    100%{background-color: rgba(214, 158, 255, 0.5);}
+
+}
+    
+#logout{
+    
+    margin:5px;
+    font-size:20px;
+    float:right;
+    transition: transform 0.5s;
+    font-family:serif;
+    
+}
+    
+#logout:hover{
+    
+    transform: scale(1.4);
+    
+}
+    
+#header{
+    
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 3px;
+    color: rgb(255, 255, 255);
+    margin-top: 40px;
+    font-weight:normal;
+    font-size: 30px;
+    line-height: 100px;
+        
+}
+
+[placeholder]:focus::-webkit-input-placeholder{
+
+    transition: text-indent 9.9s 0.6s ease; 
+    text-indent: -100%;
+    opacity: 1;
+    color: rgb(15, 79, 255);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+#room_name_display,#user_name_display{
+
+    font-family: 'Tangerine', cursive;
+    font-size: 40px;
+    color: white;
+
+}
+
+.container{
+
+    text-align: center;
+    height: 100%;
+
+}
+
+button{
+    transition: transform 1s, background-color 1s!important;
+    border-width: 0px!important;
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing:1px;
+    margin: 5px;
+}
+
+button:hover{
+    transform: scale(1.5);
+}
+
+input{
+    width: 97%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(15, 79, 255);
+    border: none;
+    margin: 5px;
+    border-width: 0px!important;
+    margin-right: 5px;
+}
+
+h3{
+    font-family: cursive;
+    font-weight: bold;
+    color: blue;
+}
+
+#setting_status{
+    background-color:rgba(255, 255, 255, 0.7);
+    width: 100%;
+    bottom: 0;
+    position:fixed;
+    left: 0;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+}
+
+#output{
+    width: 100%;
+    background-color: lavender;
+    border-radius: 20px;
+    border-width: 0px;
+    padding:10px;
+    text-align: center;
+}
+
+#final_status{
+    border-radius: 10px;
+    border-width: 5px!important;
+    border-color: darkorange!important;
+    font-size: 40px;
+}
+
+#contain{
+    background-color: rgb(0, 119, 255);
+    border-radius: 10px;
+    color: aliceblue;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Status Viewer</title>
+
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="room.css">
+    <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="container-fluid"><br>
+        <button class="btn btn-danger" id="logout" type="button" onclick="logoout()">
+            Logout</button><br><br><br>
+        <center>
+            <h1 id="header">Status Viewer</h1>
+            <h2 id="room_name_display"></h2>
+            <h3 id="user_name_display"></h3>
+        </center>
+
+        <div id="output"></div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <center>
+            <div id="setting_status">
+                <h3>Update:</h3>
+                <input id="status_input" type="text" class="form-control" placeholder="Type a status">
+                <input id="status_color" type="text" class="form-control" placeholder="Status Color(Eg: Black, Darkblue, Brown)">
+                <input id="status_background" type="text" class="form-control" placeholder="Status Background(Eg: White, Lightblue, Pink)">
+                <input id="status_font" type="text" class="form-control" placeholder="Status Font(Eg: Fantacy, sans, serif)">
+                <button id="apply" type="button" class="btn btn-lg btn-success" onclick="upodate_status()">Apply</button><br><br>
+
+            </div>
+        </center>
+    </div>
+    <script src="room.js"></script>
+</body>
+
+</html>

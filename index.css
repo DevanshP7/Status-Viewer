@@ -1,0 +1,130 @@
+body{
+
+    height: 100%;
+    animation-name: nameofanimation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes nameofanimation{
+
+    0%{background-color: rgba(214, 158, 255, 0.5);}
+    33%{background-color: rgba(132, 132, 255, 0.5);}
+    66%{background-color: rgba(121, 206, 255, 0.5);}
+    100%{background-color: rgba(214, 158, 255, 0.5);}
+
+}
+
+#header{
+
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 5px;
+    color: rgb(64, 115, 255);
+    margin-top: 50px;
+    font-weight:normal;
+    font-size: 40px;
+    background-color: rgba(240, 248, 255, 0.788);
+    border-radius: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 40px;
+    padding-left: 40px;
+
+}
+
+.container{
+
+    background-color: transparent;
+    text-align: center;
+    height: 100%;
+
+}
+
+#name_div,#room_div{
+
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    float:none;
+    border-top:rgba(255, 255, 255, 0.787) 10px solid;
+    padding-bottom: 10px;
+        
+}
+
+[placeholder]:focus::-webkit-input-placeholder{
+
+    transition: text-indent 9.9s 0.6s ease; 
+    text-indent: -100%;
+    opacity: 1;
+    color: rgb(15, 79, 255);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        
+}
+
+#user_name_input,#room_name_input{
+
+    width: 97%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(15, 79, 255);
+    border: none;
+
+}
+
+label{
+
+    font-family:cursive;
+    color: rgba(70, 70, 255, 0.863);
+    font-size: large;
+    margin-top: 10px;
+
+}
+
+#add_room{
+
+    width:40%;
+    border-radius: 20px;
+    margin-top: 15px;
+    background-image: linear-gradient(to right, rgba(168,206,255,1) 5%,#40a3ff  50%, rgba(168,206,255,1) 95%);
+    border-style: none;
+    font-size: 45px;
+    color: rgb(255, 255, 255);
+    transition:width 1s;
+    font-family: 'Clicker Script', cursive;    
+}
+    
+#add_room:hover{
+    
+    width:100%;
+            
+}
+
+.footer{
+    font-family: cursive;
+    font-size: 200%;
+    bottom: 0;
+    margin-bottom: 200;
+    text-shadow: 2px 2px 3px gray;
+    position: fixed;
+}
+
+#my_logo{
+    transition: transform 1.5s;
+}
+
+#my_logo:hover{
+    transform: rotateZ(360deg);
+}
+
+#rooms{
+    background-color: rgba(135, 206, 250, 0.7);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.room_name{
+    font-family: 'Cormorant Garamond', serif;
+    color: blue;
+    font-size: 40px;
+}
